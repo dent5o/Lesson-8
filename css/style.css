@@ -1,0 +1,316 @@
+/* &display=swap - добавить в конце строки при использовании плагина Google Fonts 
+&subset=cyrillic-ext - добавить (без пробела) к выше указанному для работы кириллического начертания*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url(../fonts/HelveticaNeue.woff2) format('woff2'),
+        url(../fonts/HelveticaNeue.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px; /* по умолчанию */
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------ */
+
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+/* Section-1 */
+
+
+.section-1 span {
+	color: #ff0000;
+	font-weight: 800;
+	letter-spacing: 2px;
+}
+.links {
+	max-width: 50%;
+	display: inline-block;
+	padding: 30px 80px;
+	text-align: center;
+}
+
+.link {
+	display: block;
+}
+
+.link:visited {
+	color: inherit;
+}
+
+.link_hover:hover,
+.button_hover:hover {
+	color: #0000ff;
+}
+
+.link_visited:visited,
+.button_visited:visited {
+	color: #8a2be2;
+}
+
+.link_active:active,
+.button_active:active {
+	color: #dc143c;
+}
+
+.link_focus:focus,
+.button_focus:focus {
+	color: #14dc57;
+}
+
+.hid {
+	display: none;
+}
+
+.hid:target {
+	display: block;
+}
+
+.link:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.button {
+	display: block;
+}
+
+.button:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.buttons {
+	max-width: 50%;
+	display: inline-block;
+	padding: 30px 80px;
+	text-align: center;
+}
+
+.button {
+	height: 42px;
+	background: #3a7999;
+	color: #f2f2f2;
+	padding: 12px 15px 10px 15px;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: all 500ms  ease;
+}
+
+ul li:nth-child(odd) {
+	color: #ff0000;
+}
+
+ul li:nth-child(2):hover {
+	color: #4B4B4B;
+}
+
+ul li:nth-child(even) {
+	color: #9672fa;
+}
+
+ul li:first-child {
+	color: #adff2f;
+}
+
+ul li:last-child {
+	color: #daa520;
+}
+
+/* Section-2 */
+
+.section-2 {
+	background: #F5F5F5;;
+}
+
+.promises {
+	padding: 30px 0 50px 0;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	margin-bottom: 38px;
+}
+
+.subtitle::before {
+	content: url(../img/Mark.png);
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 4px 0 -5px;
+}
+
+.title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+	margin-bottom: 68px;
+}
+
+.prop-block {
+	max-width: 33%;
+	display: inline-block;
+}
+
+.prop-1::before {
+	content: url(../img/dog_love_24x.png);
+}
+
+.prop-2::before {
+	content: url(../img/dog_vet_24x.png);
+}
+
+.prop-3::before {
+	content: url(../img/dog_stream_24x.png);
+}
+
+.block_wrapper::before {
+	margin-right: 23px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.prop__title {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #F2726F;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.prop__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+	display: inline-block;
+	margin: -20px 0 0 86px;
+}
+
+/* Section-3 */
+
+.section-3 {
+	background: #1A1A1A;
+	font-family: "HelveticaNeue", sans-serif;
+}
+
+.cards {
+	padding: 30px 0 30px 0;
+}
+
+.card {
+	padding: 24px 26px 62px 24px;
+	margin: 0 auto;
+	width: 255px;
+	background: #252525;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+}
+
+.card__title {
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: -0.275px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	/* margin-bottom: 36px; */
+}
+
+.card__title::after {
+	content: "";
+	display: block;
+	width: 56px;
+	height: 2px;
+	background-color: #34C759;
+	margin-top: 13px;
+	margin-bottom: 25px;
+}
+
+.card__text {
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1625px;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: justify;
+}
+
+/* FOOTER */
+
+footer {
+	padding: 30px 0;
+}
+
+.validation {
+	text-align: center;
+}
+
+.image {
+	display: inline-block;
+}
